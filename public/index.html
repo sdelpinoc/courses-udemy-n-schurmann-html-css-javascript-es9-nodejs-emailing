@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-sm">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Emailing</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="to" class="form-label">To:</label>
+                        <input type="text" class="form-control" name="to" id="to" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject:</label>
+                        <input type="text" class="form-control" name="subject" id="subject">
+                    </div>
+                    <div class="mb-5">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea class="form-control" name="message" id="message"></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                    <div id="error" class="text-danger"></div>
+                    <div id="success" class="text-success"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
